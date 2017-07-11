@@ -46,8 +46,8 @@ defmodule BearcatPhoenix.Mixfile do
       name: :bearcat_phoenix,
       files: ["lib", "mix.exs", "README*", "readme*", "LICENSE*", "license*"],
       maintainers: ["Cody Tanner"],
-      licenses: ["Apache 2.0"],
-      links: %{"GitHub" => "https://github.com/elixir-ecto/postgrex"}
+      licenses: ["MIT License"],
+      links: %{"GitHub" => "https://github.com/CerebralStorm/bearcat_phoenix"}
     ]
   end
 end

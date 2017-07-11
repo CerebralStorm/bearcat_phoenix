@@ -7,7 +7,11 @@ defmodule BearcatPhoenix.Mixfile do
      elixir: "~> 1.4",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
-     deps: deps()]
+     description: description(),
+     package: package(),
+     deps: deps(),
+     name: "BearcatPhoenix",
+     source_url: "https://github.com/CerebralStorm/bearcat_phoenix"]
   end
 
   # Configuration for the OTP application
@@ -44,7 +48,7 @@ defmodule BearcatPhoenix.Mixfile do
     # These are the default files included in the package
     [
       name: :bearcat_phoenix,
-      files: ["lib", "mix.exs", "README*", "readme*", "LICENSE*", "license*"],
+      files: ["lib", "mix.exs", "README*"],
       maintainers: ["Cody Tanner"],
       licenses: ["MIT License"],
       links: %{"GitHub" => "https://github.com/CerebralStorm/bearcat_phoenix"}

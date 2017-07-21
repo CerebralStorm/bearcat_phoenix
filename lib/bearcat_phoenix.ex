@@ -1,4 +1,5 @@
 defmodule BearcatPhoenix do
+  import Plug.Conn
   require BearcatPhoenix.Client.Course
   require BearcatPhoenix.Client.Report
 
@@ -8,5 +9,9 @@ defmodule BearcatPhoenix do
     else
       response
     end
+  end
+
+  def encode_params(params) do
+    Plug.Conn.Query.encode(params)
   end
 end

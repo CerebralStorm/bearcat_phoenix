@@ -3,7 +3,7 @@ defmodule BearcatPhoenix.Mixfile do
 
   def project do
     [app: :bearcat_phoenix,
-     version: "0.1.0",
+     version: "0.1.1",
      elixir: "~> 1.4",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
@@ -35,7 +35,9 @@ defmodule BearcatPhoenix.Mixfile do
     [
       {:httpotion, "~> 3.0.2"},
       {:poison, "~> 3.1"},
-      {:ex_doc, ">= 0.0.0", only: :dev}
+      {:ex_doc, ">= 0.0.0", only: :dev},
+      {:plug, github: "elixir-lang/plug"},
+      {:csv, "~> 2.0.0"}
     ]
   end
 

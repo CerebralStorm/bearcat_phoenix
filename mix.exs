@@ -36,7 +36,7 @@ defmodule BearcatPhoenix.Mixfile do
       {:httpotion, "~> 3.0.2"},
       {:poison, "~> 3.1"},
       {:ex_doc, ">= 0.0.0", only: :dev},
-      {:plug, github: "elixir-lang/plug"},
+      {:plug, "~> 1.4.0"},
       {:csv, "~> 2.0.0"}
     ]
   end
